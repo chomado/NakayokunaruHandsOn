@@ -12,8 +12,8 @@ namespace NakayokunaruHandsOn
             {
                 Text = "RoundedBoxView"
             };
-            // toRoundedBoxView.Clicked += async (s, e) =>
-            //     await rootPage.Navigation.PushAsync(new RoundedBoxViewPage());
+            toRoundedBoxView.Clicked += async (s, e) =>
+                await rootPage.Navigation.PushAsync(new RoundedBoxViewPage());
 
             var toEventBasedWebView = new Button
             {
