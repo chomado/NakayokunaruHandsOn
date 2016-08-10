@@ -31,11 +31,11 @@ namespace NakayokunaruHandsOn
         }
         #endregion
 
-        // public event EventHandler Clicked;
+        public event EventHandler Clicked;
 
-        // internal void SendClick()
-        // {
-        //  Clicked?.Invoke(this, EventArgs.Empty);
-        // }
+        internal void SendClick()
+        {
+            Clicked?.Invoke(this, EventArgs.Empty);
+        }
     }
 }

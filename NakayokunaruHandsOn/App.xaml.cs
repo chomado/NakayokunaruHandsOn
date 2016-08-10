@@ -19,8 +19,8 @@ namespace NakayokunaruHandsOn
             {
                 Text = "EventBasedWebView"
             };
-            // toEventBasedWebView.Clicked += async (s, e) =>
-            //     await rootPage.Navigation.PushAsync(new EventBasedWebViewPage());
+            toEventBasedWebView.Clicked += async (s, e) =>
+               await rootPage.Navigation.PushAsync(new EventBasedWebViewPage());
 
             var toMessageBasedWebView = new Button
             {
