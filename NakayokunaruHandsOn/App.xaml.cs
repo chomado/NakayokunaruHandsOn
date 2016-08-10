@@ -6,9 +6,41 @@ namespace NakayokunaruHandsOn
     {
         public App()
         {
-            InitializeComponent();
+            var rootPage = new ContentPage();
 
-            MainPage = new NakayokunaruHandsOnPage();
+            var toRoundedBoxView = new Button
+            {
+                Text = "RoundedBoxView"
+            };
+            // toRoundedBoxView.Clicked += async (s, e) =>
+            //     await rootPage.Navigation.PushAsync(new RoundedBoxViewPage());
+
+            var toEventBasedWebView = new Button
+            {
+                Text = "EventBasedWebView"
+            };
+            // toEventBasedWebView.Clicked += async (s, e) =>
+            //     await rootPage.Navigation.PushAsync(new EventBasedWebViewPage());
+
+            var toMessageBasedWebView = new Button
+            {
+                Text = "MessageBasedWebView"
+            };
+            // toMessageBasedWebView.Clicked += async (s, e) =>
+            //     await rootPage.Navigation.PushAsync(new MessageBasedWebViewPage());
+
+            rootPage.Content = new StackLayout
+            {
+                VerticalOptions = LayoutOptions.Center,
+                Children =
+                {
+                    toRoundedBoxView,
+                    toEventBasedWebView,
+                    toMessageBasedWebView,
+                },
+            };
+
+            MainPage = new NavigationPage(rootPage);
         }
 
         protected override void OnStart()
