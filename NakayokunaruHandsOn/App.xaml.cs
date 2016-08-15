@@ -26,8 +26,8 @@ namespace NakayokunaruHandsOn
             {
                 Text = "MessageBasedWebView"
             };
-            // toMessageBasedWebView.Clicked += async (s, e) =>
-            //     await rootPage.Navigation.PushAsync(new MessageBasedWebViewPage());
+            toMessageBasedWebView.Clicked += async (s, e) =>
+               await rootPage.Navigation.PushAsync(new MessageBasedWebViewPage());
 
             rootPage.Content = new StackLayout
             {

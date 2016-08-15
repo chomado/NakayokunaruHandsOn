@@ -36,6 +36,9 @@
     <EmbeddedResource Include="EventBasedWebViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="MessageBasedWebViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -52,6 +55,10 @@
     <Compile Include="EventBasedWebView.cs" />
     <Compile Include="EventBasedWebViewPage.xaml.cs">
       <DependentUpon>EventBasedWebViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBasedWebView.cs" />
+    <Compile Include="MessageBasedWebViewPage.xaml.cs">
+      <DependentUpon>MessageBasedWebViewPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
